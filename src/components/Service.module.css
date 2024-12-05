@@ -1,0 +1,72 @@
+/* General styles for the section */
+.servicessection {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.servicestitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Container for the stickers */
+.stickerscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Individual sticker styling */
+.sticker {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sticker:hover {
+  transform: translateY(-10px);
+}
+
+.stickerimage {
+  width: 150px;
+  height: 150px;
+
+  width: 100%;
+  /* height: auto; */
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.stickertext {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .sticker {
+    width: 180px; /* Slightly smaller stickers for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .sticker {
+    width: 150px; /* Smaller stickers for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .sticker {
+    width: 100%; /* Full width for small screens */
+  }
+}
